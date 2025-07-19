@@ -2,88 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ulrich Baits | Home of the Shimmy Stick</title>
-  <meta name="description" content="Ulrich Baits makes ultra-realistic soft plastics designed to catch the fisherman AND the fish.">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ulrich Baits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #fff;
+      background: #f8f8f8;
       color: #111;
-      line-height: 1.6;
+      text-align: center;
     }
+
     header {
-      background: #0e0e0e;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-align: center;
+      background: #000;
+      color: white;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
-    header h1 {
-      margin: 0;
+
+    h1 {
+      margin-top: 2rem;
       font-size: 2rem;
+      font-weight: 700;
     }
-    .hero {
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
+
+    p {
       max-width: 600px;
-      margin: 0 auto 2rem;
-      font-size: 1.1rem;
-    }
-    .cta-btn {
-      background: #111;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      text-decoration: none;
+      margin: 1rem auto;
       font-size: 1rem;
-      border-radius: 5px;
-      transition: background 0.2s;
+      color: #555;
     }
-    .cta-btn:hover {
-      background: #444;
+
+    .button {
+      background: black;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 1rem;
     }
-    .product-preview {
-      padding: 2rem 1rem;
-      background: #f7f7f7;
-      text-align: center;
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 3rem auto;
+      max-width: 900px;
+      flex-wrap: wrap;
     }
-    .product-preview img {
-      max-width: 300px;
-      width: 90%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      text-align: left;
     }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
     .footer {
-      text-align: center;
-      font-size: 0.9rem;
+      padding: 2rem;
+      font-size: 0.875rem;
       color: #777;
-      padding: 2rem 1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Ulrich Baits</h1>
+    Ulrich Baits
   </header>
 
-  <section class="hero">
-    <h2>Ultra-Realistic Soft Plastics</h2>
-    <p>Welcome to the home of the Shimmy Stick. Designed to catch the fisherman—not just the fish. Precision-crafted for top-tier realism and performance.</p>
-    <a href="/shop" class="cta-btn">Shop Now</a>
-  </section>
+  <main>
+    <h1>Built for the Bite.<br>Premium soft plastics. Rugged moves.</h1>
+    <p>Shimmy Stick, Flicky Claw, and more coming soon. Designed to catch the fisherman—not just the fish.</p>
+    <a href="/shop" class="button">Shop the Baits</a>
 
-  <section class="product-preview">
-    <img src="images/shimmy-stick-preview.jpg" alt="Shimmy Stick bait preview" />
-    <p><strong>The Shimmy Stick:</strong> Engineered to move like no other. Coming soon.</p>
-  </section>
+    <div class="cards">
+      <div class="card">
+        <h3>Shimmy Stick</h3>
+        <p>Erratic side-to-side action to drive bass wild. Perfect for weightless and finesse setups.</p>
+      </div>
+      <div class="card">
+        <h3>Flicky Claw</h3>
+        <p>Ultra-realistic craw with lifelike texture and twitchy claws. Deadly on Texas rig, jig trailer, or Carolina rig.</p>
+      </div>
+      <div class="card">
+        <h3>More Baits Coming</h3>
+        <p>Stay tuned for new drops. Hand-designed by anglers for anglers.</p>
+      </div>
+    </div>
+  </main>
 
   <footer class="footer">
     &copy; 2025 Ulrich Baits. All rights reserved.

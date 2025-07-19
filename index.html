@@ -7,95 +7,111 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #1e1f1e;
-      color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
     .hero {
-      background: #2c2d2c;
-      padding: 3rem 2rem;
-      text-align: center;
+      width: 100%;
+      height: 250px;
+      background-image: url("UlrichBaitsLogo2%203.png");
+      background-size: cover;
+      background-position: center;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
-    .hero p {
-      font-size: 1.2rem;
-      color: #aaa;
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
     }
 
     .product {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #333;
+      background: #fff;
       border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      width: 300px;
+      padding: 1rem;
       text-align: center;
     }
 
     .product img {
       width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-      margin-bottom: 1.5rem;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 1rem;
     }
 
     .product h2 {
-      margin-top: 0;
-      font-size: 2rem;
+      margin: 0 0 0.5rem;
+      font-size: 1.25rem;
     }
 
     .product p {
-      font-size: 1rem;
-      color: #ccc;
+      font-size: 0.95rem;
+      color: #555;
     }
 
     .btn {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: #49d06f;
-      color: black;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
       font-weight: bold;
       border-radius: 4px;
-      text-decoration: none;
-      margin-top: 1.2rem;
-      transition: 0.2s ease;
+      transition: background 0.2s ease;
     }
 
     .btn:hover {
-      background: #3cc25d;
-      transform: scale(1.03);
+      background: #005fcc;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Ulrich Baits</h1>
-    <p>Ultra-Realistic. Ultra-Deadly. Meet the Shimmy Stick.</p>
-  </section>
+  <div class="hero"></div>
 
-  <section class="product">
-    <img src="Shimmy%20Stick.png" alt="Shimmy Stick bait" />
-    <h2>Shimmy Stick</h2>
-    <p>
-      Designed for a natural shimmy on the fall, this 5" bait features a precision taper and ultra-soft body for premium action and hook penetration. Pairs well with Texas, Wacky, or Neko rigs.
-    </p>
-    <a href="/shop" class="btn">Buy Now</a>
-  </section>
+  <div class="container">
+    <div class="products">
+
+      <!-- Product Card 1 -->
+      <div class="product">
+        <img src="Shimmy%20Stick.png" alt="Shimmy Stick bait" />
+        <h2>Shimmy Stick</h2>
+        <p>
+          Designed for a natural shimmy on the fall, this 5" bait features a precision taper and ultra-soft body for premium action and hook penetration.
+        </p>
+        <a href="/shop" class="btn">Buy Now</a>
+      </div>
+
+      <!-- Product Card 2 (Duplicate or change as needed) -->
+      <div class="product">
+        <img src="Shimmy%20Stick.png" alt="Shimmy Stick bait" />
+        <h2>Shimmy Stick</h2>
+        <p>
+          Designed for a natural shimmy on the fall, this 5" bait features a precision taper and ultra-soft body for premium action and hook penetration.
+        </p>
+        <a href="/shop" class="btn">Buy Now</a>
+      </div>
+
+    </div>
+  </div>
 
   <footer>
     &copy; 2025 Ulrich Baits. All rights reserved.

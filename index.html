@@ -2,112 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ulrich Baits</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --green: #e8f5e9;
+      --black: #111;
+      --accent: #3a3a3a;
+    }
     * {
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
       margin: 0;
-      background: #f8f8f8;
-      color: #111;
-      text-align: center;
+      padding: 0;
+      box-sizing: border-box;
     }
-
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: var(--black);
+      line-height: 1.6;
+    }
     header {
-      background: #000;
-      color: white;
-      padding: 1rem 0;
-      font-size: 1.5rem;
-      font-weight: bold;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
     }
-
+    header img {
+      max-width: 180px;
+      margin-bottom: 1rem;
+    }
     h1 {
-      margin-top: 2rem;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 700;
+      margin-bottom: 0.5rem;
     }
-
-    p {
-      max-width: 600px;
-      margin: 1rem auto;
-      font-size: 1rem;
+    p.lead {
+      font-size: 1.1rem;
       color: #555;
+      max-width: 600px;
+      margin: 0 auto 2rem;
     }
-
-    .button {
-      background: black;
+    .cta {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .cta a {
+      background: var(--black);
       color: white;
       padding: 0.75rem 1.5rem;
+      border-radius: 6px;
       font-weight: 600;
       text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 1rem;
+      transition: background 0.2s;
     }
-
-    .cards {
+    .cta a:hover {
+      background: #333;
+    }
+    .products {
       display: flex;
       justify-content: center;
-      gap: 1rem;
-      margin: 3rem auto;
-      max-width: 900px;
       flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem 1rem;
     }
-
-    .card {
-      background: white;
+    .product {
+      background: #f9f9f9;
       padding: 1.5rem;
       border-radius: 12px;
-      width: 250px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      text-align: left;
+      max-width: 280px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
-    .card h3 {
-      margin-top: 0;
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .product h3 {
       font-size: 1.2rem;
+      margin-bottom: 0.5rem;
     }
-
-    .footer {
-      padding: 2rem;
+    .product p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
       font-size: 0.875rem;
-      color: #777;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <header>
-    Ulrich Baits
-  </header>
-
-  <main>
-    <h1>Built for the Bite.<br>Premium soft plastics. Rugged moves.</h1>
-    <p>Shimmy Stick, Flicky Claw, and more coming soon. Designed to catch the fisherman—not just the fish.</p>
-    <a href="/shop" class="button">Shop the Baits</a>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Shimmy Stick</h3>
-        <p>Erratic side-to-side action to drive bass wild. Perfect for weightless and finesse setups.</p>
-      </div>
-      <div class="card">
-        <h3>Flicky Claw</h3>
-        <p>Ultra-realistic craw with lifelike texture and twitchy claws. Deadly on Texas rig, jig trailer, or Carolina rig.</p>
-      </div>
-      <div class="card">
-        <h3>More Baits Coming</h3>
-        <p>Stay tuned for new drops. Hand-designed by anglers for anglers.</p>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    &copy; 2025 Ulrich Baits. All rights reserved.
-  </footer>
-</body>
-</html>

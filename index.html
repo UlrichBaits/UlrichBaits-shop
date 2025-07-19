@@ -2,95 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ulrich Baits</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ulrich Baits - Shimmy Stick</title>
   <style>
-    :root {
-      --green: #e8f5e9;
-      --black: #111;
-      --accent: #3a3a3a;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #fff;
-      color: var(--black);
-      line-height: 1.6;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1e1f1e;
+      color: #f5f5f5;
     }
-    header {
+
+    .hero {
+      background: #2c2d2c;
+      padding: 3rem 2rem;
       text-align: center;
-      padding: 2rem 1rem 1rem;
     }
-    header img {
-      max-width: 180px;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
+
+    .hero h1 {
+      font-size: 3rem;
       margin-bottom: 0.5rem;
     }
-    p.lead {
-      font-size: 1.1rem;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
-    .cta {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    .cta a {
-      background: var(--black);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .cta a:hover {
-      background: #333;
-    }
-    .products {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      padding: 2rem 1rem;
-    }
-    .product {
-      background: #f9f9f9;
-      padding: 1.5rem;
-      border-radius: 12px;
-      max-width: 280px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .product img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    .product h3 {
+
+    .hero p {
       font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+      color: #aaa;
     }
-    .product p {
-      font-size: 0.95rem;
-      color: #444;
+
+    .product {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #333;
+      border-radius: 8px;
     }
+
+    .product img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .product h2 {
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #49d06f;
+      color: black;
+      font-weight: bold;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.875rem;
-      color: #999;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
+
+  <section class="hero">
+    <h1>Ulrich Baits</h1>
+    <p>Ultra-Realistic. Ultra-Deadly. Meet the Shimmy Stick.</p>
+  </section>
+
+  <section class="product">
+    <img src="shimmy-stick.png" alt="Shimmy Stick bait" />
+    <h2>Shimmy Stick</h2>
+    <p>
+      Designed for a natural shimmy on the fall, this 5" bait features a precision taper and ultra-soft body for premium action and hook penetration. Pairs well with Texas, Wacky, or Neko rigs.
+    </p>
+    <a href="/shop" class="btn">Buy Now</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Ulrich Baits. All rights reserved.
+  </footer>
+
+</body>
+</html>
